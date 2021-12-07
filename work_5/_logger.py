@@ -8,5 +8,4 @@ def logger(file):
             res = foo(*args, **kwargs)
             print(f'{foo.__name__}:{res}', file=open(file, 'a'))
         return wrapper
-    open(file, 'w').close()
     return decorator
